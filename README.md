@@ -11,7 +11,7 @@ This repository contains code for interfacing with Meta's Llama2 model, a large 
 **Requirements:**
 - Python 3.x
 - tkinter (for GUI implementation)
-- Llama2 model from Meta
+- Llama2 model from Meta (installed locally in system)
 
 **Usage:**
 1. Clone the repository to your local machine:
@@ -21,7 +21,7 @@ This repository contains code for interfacing with Meta's Llama2 model, a large 
 
 2. Install Ollama Desktop application for your respective Operating System from [here](https://ollama.com/)
 
-3. Extract the zip file and run the application (This will automatically set the "ollama" command in your system's PATH).
+3. Extract the zip file and run the application (This will automatically set the "ollama" command in your OS's PATH).
 
 4. Run the application:
    ```
@@ -32,7 +32,7 @@ This repository contains code for interfacing with Meta's Llama2 model, a large 
 
 **Additional Information:**
 - The Llama2 model used in this project is developed by Meta and contains 7 billion parameters.
-- For more information about Meta's Llama2 model, refer to their official documentation.
+- For more information about Meta's Llama2 model, refer to their [official documentation](https://llama.meta.com/llama2/).
 - Contributions to this repository are welcome. Feel free to submit pull requests or open issues for any suggestions or improvements.
 
 **License:**
