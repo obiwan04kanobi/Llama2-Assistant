@@ -28,7 +28,7 @@ user_input.bind("<Return>", send_message)
 user_input.pack(side=tk.BOTTOM, fill=tk.X, padx=10, pady=10, ipady=10)
 
 # Output box
-output_text = tk.Text(root, font=('Helvetica', 14), state=tk.DISABLED)
+output_text = tk.Text(root, font=('Helvetica', 20), state=tk.DISABLED)
 output_text.pack(side=tk.TOP, fill=tk.BOTH, expand=True, padx=10, pady=10)
 
 # Send button
