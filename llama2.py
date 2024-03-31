@@ -14,13 +14,16 @@ def send_message(event=None):
         user_input.delete(0, tk.END)
         response = get_response(message)
         output_text.config(state=tk.NORMAL)
-        output_text.insert(tk.END, "You: " + message + '\n')
-        output_text.insert(tk.END, "llama2: " + response + '\n\n')
+        output_text.insert(tk.END, "You: \n" + message + '\n')
+        output_text.insert(tk.END, "llama2: \n" + response + '\n\n')
         output_text.config(state=tk.DISABLED)
 
 # GUI
 root = tk.Tk()
 root.title("Llama2")
+
+# Set transparency level (0.5 for example, adjust as needed)
+root.attributes('-alpha', 0.89)
 
 # Input box
 user_input = tk.Entry(root, font=('Helvetica', 20))
