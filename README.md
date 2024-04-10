@@ -30,6 +30,9 @@ This repository contains code for interfacing with Meta's Llama2 model, a large 
 
 5. Use the GUI interface to input text queries and receive responses from the Llama2 model.
 
+## Current UI
+![UI](/Images/UI.jpg)
+
 ## Additional Information:
 - The Llama2 model used in this project is developed by Meta and contains 7 billion parameters.
 - For more information about Meta's Llama2 model, refer to their [official documentation](https://llama.meta.com/llama2/).
