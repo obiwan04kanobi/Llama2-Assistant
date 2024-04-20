@@ -6,7 +6,7 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage, END, NORMAL,DIS
 import subprocess
 
 def get_response(input_text):
-    command = f'ollama run llama2 "{input_text}"'
+    command = f'ollama run llama3 "{input_text}"'
     process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
     stdout, stderr = process.communicate()
     response =stdout.decode().strip()
@@ -19,7 +19,7 @@ def send_message(event=None):
         response = get_response(message)
         output_text.config(state=NORMAL)
         output_text.insert(END, "You: \n" + message + '\n')
-        output_text.insert(END, "llama2: \n" + response + '\n\n')
+        output_text.insert(END, "llama3: \n" + response + '\n\n')
         output_text.config(state=DISABLED)
 
 #GUI Starts Here !!!
@@ -38,7 +38,7 @@ def relative_to_assets(path: str) -> Path:
 
 window = Tk()
 
-window.title("Llama2 Assistant")
+window.title("Llama3 Assistant")
 window.geometry("1300x800")
 window.configure(bg = "#FFFFFF")
 
